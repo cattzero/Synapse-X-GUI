@@ -1,0 +1,948 @@
+--[[
+
+		Synapse X GUI
+		Made by Master
+		Version 1.2.0
+
+]]
+
+
+-- Instances
+
+local SynapseXGUI = Instance.new("ScreenGui")
+local SynapseX = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local CloseButton = Instance.new("TextButton")
+local MinimizeButton = Instance.new("TextButton")
+local ScriptBox = Instance.new("TextBox")
+local Frame_2 = Instance.new("Frame")
+local Number1 = Instance.new("TextLabel")
+local ScriptsFrame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Script1 = Instance.new("TextButton")
+local Script2 = Instance.new("TextButton")
+local OpenFile = Instance.new("TextButton")
+local ScriptHub = Instance.new("TextButton")
+local Options = Instance.new("TextButton")
+local TabSystem = Instance.new("Frame")
+local script1tab = Instance.new("TextLabel")
+local CloseButton_2 = Instance.new("TextButton")
+local AddButton = Instance.new("TextButton")
+local script2tab = Instance.new("TextLabel")
+local CloseButton_3 = Instance.new("TextButton")
+local AddButton_2 = Instance.new("TextButton")
+local SaveFile = Instance.new("TextButton")
+local ScriptHub2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Logo_2 = Instance.new("ImageLabel")
+local Title_2 = Instance.new("TextLabel")
+local MinimizeButton_2 = Instance.new("TextButton")
+local ScriptsHub = Instance.new("Frame")
+local darkdexScript1 = Instance.new("TextButton")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local remotespyScript2 = Instance.new("TextButton")
+local Description = Instance.new("Frame")
+local TextScript1 = Instance.new("TextLabel")
+local TextScript2 = Instance.new("TextLabel")
+local Execute_2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local ImagesScript = Instance.new("Frame")
+local ImageScript1 = Instance.new("Frame")
+local namescript = Instance.new("TextLabel")
+local ImageScript2 = Instance.new("Frame")
+local namescript_2 = Instance.new("TextLabel")
+local OptionsHub2 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Logo_3 = Instance.new("ImageLabel")
+local Title_3 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local ImagesScript_2 = Instance.new("Frame")
+local ImageScript1_2 = Instance.new("Frame")
+local namescript_3 = Instance.new("TextLabel")
+local ImageScript2_2 = Instance.new("Frame")
+local namescript_4 = Instance.new("TextLabel")
+local Functions = Instance.new("Frame")
+local Text1 = Instance.new("TextLabel")
+local Toggle1 = Instance.new("TextButton")
+local Text2 = Instance.new("TextLabel")
+local Toggle2 = Instance.new("TextButton")
+
+-- Properties
+
+SynapseXGUI.Name = "SynapseXGUI"
+SynapseXGUI.Parent = game.CoreGui
+SynapseXGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SynapseX.Name = "SynapseX"
+SynapseX.Parent = SynapseXGUI
+SynapseX.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+SynapseX.BorderSizePixel = 0
+SynapseX.Position = UDim2.new(0.233392492, 0, 0.336734682, 0)
+SynapseX.Size = UDim2.new(0, 600, 0, 280)
+SynapseX.Visible = false
+
+Execute.Name = "Execute"
+Execute.Parent = SynapseX
+Execute.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.00300000003, 0, 0.899999976, 0)
+Execute.Size = UDim2.new(0, 80, 0, 25)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(1, 1, 1)
+Execute.TextSize = 16
+
+Clear.Name = "Clear"
+Clear.Parent = SynapseX
+Clear.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.145307451, 0, 0.899859846, 0)
+Clear.Size = UDim2.new(0, 80, 0, 25)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(1, 1, 1)
+Clear.TextSize = 16
+
+Frame.Parent = SynapseX
+Frame.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 600, 0, 30)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.333333343, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Synapse X - v1.2.0"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 16
+Title.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo.BackgroundTransparency = 1
+Logo.Size = UDim2.new(0, 30, 0, 30)
+Logo.Image = "http://www.roblox.com/asset/?id=9524079125"
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseButton.BackgroundTransparency = 1
+CloseButton.Position = UDim2.new(0.966666639, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 20, 0, 20)
+CloseButton.Font = Enum.Font.Arial
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.new(1, 1, 1)
+CloseButton.TextSize = 14
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = Frame
+MinimizeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+MinimizeButton.BackgroundTransparency = 1
+MinimizeButton.Position = UDim2.new(0.933333278, 0, 0, 0)
+MinimizeButton.Size = UDim2.new(0, 20, 0, 20)
+MinimizeButton.Font = Enum.Font.Arial
+MinimizeButton.Text = "_"
+MinimizeButton.TextColor3 = Color3.new(1, 1, 1)
+MinimizeButton.TextSize = 14
+
+ScriptBox.Name = "ScriptBox"
+ScriptBox.Parent = SynapseX
+ScriptBox.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+ScriptBox.BorderSizePixel = 0
+ScriptBox.Position = UDim2.new(0.0533333346, 0, 0.178571433, 0)
+ScriptBox.Size = UDim2.new(0, 456, 0, 196)
+ScriptBox.Font = Enum.Font.SourceSans
+ScriptBox.Text = "--Synapse X Made by Master."
+ScriptBox.TextColor3 = Color3.new(1, 1, 1)
+ScriptBox.TextSize = 14
+ScriptBox.TextXAlignment = Enum.TextXAlignment.Left
+ScriptBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame_2.Parent = SynapseX
+Frame_2.BackgroundColor3 = Color3.new(0.215686, 0.215686, 0.215686)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.00333333341, 0, 0.171428576, 0)
+Frame_2.Size = UDim2.new(0, 30, 0, 198)
+
+Number1.Name = "Number1"
+Number1.Parent = Frame_2
+Number1.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Number1.BorderSizePixel = 0
+Number1.Size = UDim2.new(0, 30, 0, 15)
+Number1.Font = Enum.Font.Arial
+Number1.Text = "1"
+Number1.TextColor3 = Color3.new(1, 1, 1)
+Number1.TextSize = 14
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = SynapseX
+ScriptsFrame.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ScriptsFrame.BorderSizePixel = 0
+ScriptsFrame.Position = UDim2.new(0.821666658, 0, 0.117857143, 0)
+ScriptsFrame.Size = UDim2.new(0, 100, 0, 213)
+
+UIListLayout.Parent = ScriptsFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Script1.Name = "Script1"
+Script1.Parent = ScriptsFrame
+Script1.BackgroundColor3 = Color3.new(1, 1, 1)
+Script1.BackgroundTransparency = 1
+Script1.BorderSizePixel = 0
+Script1.Size = UDim2.new(0, 100, 0, 20)
+Script1.Font = Enum.Font.SourceSans
+Script1.Text = "inf yield.lua"
+Script1.TextColor3 = Color3.new(1, 1, 1)
+Script1.TextSize = 14
+Script1.TextXAlignment = Enum.TextXAlignment.Left
+
+Script2.Name = "Script2"
+Script2.Parent = ScriptsFrame
+Script2.BackgroundColor3 = Color3.new(1, 1, 1)
+Script2.BackgroundTransparency = 1
+Script2.BorderSizePixel = 0
+Script2.Size = UDim2.new(0, 100, 0, 20)
+Script2.Visible = false
+Script2.Font = Enum.Font.SourceSans
+Script2.Text = "NewFile.lua"
+Script2.TextColor3 = Color3.new(1, 1, 1)
+Script2.TextSize = 14
+Script2.TextXAlignment = Enum.TextXAlignment.Left
+
+OpenFile.Name = "OpenFile"
+OpenFile.Parent = SynapseX
+OpenFile.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+OpenFile.BorderSizePixel = 0
+OpenFile.Position = UDim2.new(0.290307403, 0, 0.899859846, 0)
+OpenFile.Size = UDim2.new(0, 80, 0, 25)
+OpenFile.Font = Enum.Font.SourceSans
+OpenFile.Text = "Open File"
+OpenFile.TextColor3 = Color3.new(1, 1, 1)
+OpenFile.TextSize = 16
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = SynapseX
+ScriptHub.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0.853640795, 0, 0.899859846, 0)
+ScriptHub.Size = UDim2.new(0, 80, 0, 25)
+ScriptHub.Font = Enum.Font.SourceSans
+ScriptHub.Text = "Script Hub"
+ScriptHub.TextColor3 = Color3.new(1, 1, 1)
+ScriptHub.TextSize = 16
+
+Options.Name = "Options"
+Options.Parent = SynapseX
+Options.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0.575307488, 0, 0.899859846, 0)
+Options.Size = UDim2.new(0, 80, 0, 25)
+Options.Font = Enum.Font.SourceSans
+Options.Text = "Options"
+Options.TextColor3 = Color3.new(1, 1, 1)
+Options.TextSize = 16
+
+TabSystem.Name = "TabSystem"
+TabSystem.Parent = SynapseX
+TabSystem.BackgroundColor3 = Color3.new(1, 1, 1)
+TabSystem.BackgroundTransparency = 1
+TabSystem.Position = UDim2.new(0, 0, 0.107142858, 0)
+TabSystem.Size = UDim2.new(0, 600, 0, 20)
+
+script1tab.Name = "script1tab"
+script1tab.Parent = TabSystem
+script1tab.BackgroundColor3 = Color3.new(0.490196, 0.490196, 0.490196)
+script1tab.BorderSizePixel = 0
+script1tab.Position = UDim2.new(0.00333333481, 0, 0, 0)
+script1tab.Size = UDim2.new(0, 90, 0, 20)
+script1tab.Font = Enum.Font.SourceSans
+script1tab.Text = "Script 1"
+script1tab.TextColor3 = Color3.new(1, 1, 1)
+script1tab.TextSize = 14
+
+CloseButton_2.Name = "CloseButton"
+CloseButton_2.Parent = script1tab
+CloseButton_2.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+CloseButton_2.BackgroundTransparency = 1
+CloseButton_2.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+CloseButton_2.BorderSizePixel = 0
+CloseButton_2.Position = UDim2.new(0.726511598, 0, 0.0166667439, 0)
+CloseButton_2.Size = UDim2.new(0, 20, 0, 20)
+CloseButton_2.Font = Enum.Font.Arial
+CloseButton_2.Text = "X"
+CloseButton_2.TextColor3 = Color3.new(1, 1, 1)
+CloseButton_2.TextSize = 14
+
+AddButton.Name = "AddButton"
+AddButton.Parent = script1tab
+AddButton.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+AddButton.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+AddButton.Position = UDim2.new(1.04999995, 0, 0.150000006, 0)
+AddButton.Size = UDim2.new(0, 15, 0, 15)
+AddButton.Font = Enum.Font.Arial
+AddButton.Text = "+"
+AddButton.TextColor3 = Color3.new(1, 1, 1)
+AddButton.TextSize = 16
+
+script2tab.Name = "script2tab"
+script2tab.Parent = TabSystem
+script2tab.BackgroundColor3 = Color3.new(0.490196, 0.490196, 0.490196)
+script2tab.BorderSizePixel = 0
+script2tab.Position = UDim2.new(0.153333336, 0, 0, 0)
+script2tab.Size = UDim2.new(0, 90, 0, 20)
+script2tab.Visible = false
+script2tab.Font = Enum.Font.SourceSans
+script2tab.Text = "Script 2"
+script2tab.TextColor3 = Color3.new(1, 1, 1)
+script2tab.TextSize = 14
+
+CloseButton_3.Name = "CloseButton"
+CloseButton_3.Parent = script2tab
+CloseButton_3.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+CloseButton_3.BackgroundTransparency = 1
+CloseButton_3.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+CloseButton_3.BorderSizePixel = 0
+CloseButton_3.Position = UDim2.new(0.726511598, 0, 0.0166667439, 0)
+CloseButton_3.Size = UDim2.new(0, 20, 0, 20)
+CloseButton_3.Font = Enum.Font.Arial
+CloseButton_3.Text = "X"
+CloseButton_3.TextColor3 = Color3.new(1, 1, 1)
+CloseButton_3.TextSize = 14
+
+AddButton_2.Name = "AddButton"
+AddButton_2.Parent = script2tab
+AddButton_2.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+AddButton_2.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+AddButton_2.Position = UDim2.new(1.04999995, 0, 0.150000006, 0)
+AddButton_2.Size = UDim2.new(0, 15, 0, 15)
+AddButton_2.Font = Enum.Font.Arial
+AddButton_2.Text = "+"
+AddButton_2.TextColor3 = Color3.new(1, 1, 1)
+AddButton_2.TextSize = 16
+
+SaveFile.Name = "SaveFile"
+SaveFile.Parent = SynapseX
+SaveFile.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SaveFile.BorderSizePixel = 0
+SaveFile.Position = UDim2.new(0.431974053, 0, 0.899859846, 0)
+SaveFile.Size = UDim2.new(0, 80, 0, 25)
+SaveFile.Font = Enum.Font.SourceSans
+SaveFile.Text = "Save File"
+SaveFile.TextColor3 = Color3.new(1, 1, 1)
+SaveFile.TextSize = 16
+
+ScriptHub2.Name = "ScriptHub2"
+ScriptHub2.Parent = SynapseXGUI
+ScriptHub2.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+ScriptHub2.BorderSizePixel = 0
+ScriptHub2.Position = UDim2.new(0.326572001, 0, 0.244897962, 0)
+ScriptHub2.Size = UDim2.new(0, 390, 0, 300)
+ScriptHub2.Visible = false
+
+Frame_3.Parent = ScriptHub2
+Frame_3.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(0, 390, 0, 30)
+
+Logo_2.Name = "Logo"
+Logo_2.Parent = Frame_3
+Logo_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo_2.BackgroundTransparency = 1
+Logo_2.Size = UDim2.new(0, 30, 0, 30)
+Logo_2.Image = "http://www.roblox.com/asset/?id=9524079125"
+
+Title_2.Name = "Title"
+Title_2.Parent = Frame_3
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.Position = UDim2.new(0.243589759, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 30)
+Title_2.Font = Enum.Font.Arial
+Title_2.Text = "Synapse X - Script Hub"
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextSize = 14
+
+MinimizeButton_2.Name = "MinimizeButton"
+MinimizeButton_2.Parent = Frame_3
+MinimizeButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+MinimizeButton_2.BackgroundTransparency = 1
+MinimizeButton_2.Position = UDim2.new(0.948717892, 0, 0, 0)
+MinimizeButton_2.Size = UDim2.new(0, 20, 0, 20)
+MinimizeButton_2.Font = Enum.Font.Arial
+MinimizeButton_2.Text = "_"
+MinimizeButton_2.TextColor3 = Color3.new(1, 1, 1)
+MinimizeButton_2.TextSize = 14
+
+ScriptsHub.Name = "ScriptsHub"
+ScriptsHub.Parent = ScriptHub2
+ScriptsHub.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+ScriptsHub.BorderSizePixel = 0
+ScriptsHub.Position = UDim2.new(0.0156409629, 0, 0.121904701, 0)
+ScriptsHub.Size = UDim2.new(0, 100, 0, 257)
+
+darkdexScript1.Name = "darkdexScript1"
+darkdexScript1.Parent = ScriptsHub
+darkdexScript1.BackgroundColor3 = Color3.new(1, 1, 1)
+darkdexScript1.BackgroundTransparency = 1
+darkdexScript1.Size = UDim2.new(0, 100, 0, 20)
+darkdexScript1.Font = Enum.Font.Arial
+darkdexScript1.Text = "  Dark Dex"
+darkdexScript1.TextColor3 = Color3.new(1, 1, 1)
+darkdexScript1.TextSize = 14
+darkdexScript1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout_2.Parent = ScriptsHub
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+remotespyScript2.Name = "remotespyScript2"
+remotespyScript2.Parent = ScriptsHub
+remotespyScript2.BackgroundColor3 = Color3.new(1, 1, 1)
+remotespyScript2.BackgroundTransparency = 1
+remotespyScript2.Position = UDim2.new(0, 0, 0.0778210089, 0)
+remotespyScript2.Size = UDim2.new(0, 100, 0, 20)
+remotespyScript2.Font = Enum.Font.Arial
+remotespyScript2.Text = "  Remote Spy"
+remotespyScript2.TextColor3 = Color3.new(1, 1, 1)
+remotespyScript2.TextSize = 14
+remotespyScript2.TextXAlignment = Enum.TextXAlignment.Left
+
+Description.Name = "Description"
+Description.Parent = ScriptHub2
+Description.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Description.BorderSizePixel = 0
+Description.Position = UDim2.new(0.2871795, 0, 0.603333354, 0)
+Description.Size = UDim2.new(0, 272, 0, 80)
+
+TextScript1.Name = "TextScript1"
+TextScript1.Parent = Description
+TextScript1.BackgroundColor3 = Color3.new(1, 1, 1)
+TextScript1.BackgroundTransparency = 1
+TextScript1.Size = UDim2.new(0, 200, 0, 30)
+TextScript1.Visible = false
+TextScript1.Font = Enum.Font.SourceSans
+TextScript1.Text = "A version of the popular Dex explorer with patches specifically for Synapse X."
+TextScript1.TextColor3 = Color3.new(1, 1, 1)
+TextScript1.TextSize = 14
+TextScript1.TextXAlignment = Enum.TextXAlignment.Left
+TextScript1.TextYAlignment = Enum.TextYAlignment.Top
+
+TextScript2.Name = "TextScript2"
+TextScript2.Parent = Description
+TextScript2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextScript2.BackgroundTransparency = 1
+TextScript2.Size = UDim2.new(0, 200, 0, 30)
+TextScript2.Visible = false
+TextScript2.Font = Enum.Font.SourceSans
+TextScript2.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
+TextScript2.TextColor3 = Color3.new(1, 1, 1)
+TextScript2.TextSize = 14
+TextScript2.TextXAlignment = Enum.TextXAlignment.Left
+TextScript2.TextYAlignment = Enum.TextYAlignment.Top
+
+Execute_2.Name = "Execute"
+Execute_2.Parent = ScriptHub2
+Execute_2.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Execute_2.BorderSizePixel = 0
+Execute_2.Position = UDim2.new(0.286906868, 0, 0.892479539, 0)
+Execute_2.Size = UDim2.new(0, 132, 0, 25)
+Execute_2.Font = Enum.Font.Arial
+Execute_2.Text = "Execute"
+Execute_2.TextColor3 = Color3.new(1, 1, 1)
+Execute_2.TextSize = 14
+
+Close.Name = "Close"
+Close.Parent = ScriptHub2
+Close.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.645881236, 0, 0.892479539, 0)
+Close.Size = UDim2.new(0, 132, 0, 25)
+Close.Font = Enum.Font.Arial
+Close.Text = "Close"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextSize = 14
+
+ImagesScript.Name = "ImagesScript"
+ImagesScript.Parent = ScriptHub2
+ImagesScript.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImagesScript.BackgroundTransparency = 1
+ImagesScript.BorderSizePixel = 0
+ImagesScript.Position = UDim2.new(0.2871795, 0, 0.121904701, 0)
+ImagesScript.Size = UDim2.new(0, 271, 0, 138)
+
+ImageScript1.Name = "ImageScript1"
+ImageScript1.Parent = ImagesScript
+ImageScript1.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImageScript1.BorderSizePixel = 0
+ImageScript1.Position = UDim2.new(-0.000643372536, 0, -0.00128370523, 0)
+ImageScript1.Size = UDim2.new(0, 271, 0, 138)
+ImageScript1.Visible = false
+
+namescript.Name = "namescript"
+namescript.Parent = ImageScript1
+namescript.BackgroundColor3 = Color3.new(1, 1, 1)
+namescript.BackgroundTransparency = 1
+namescript.Position = UDim2.new(0.129151285, 0, 0.391304344, 0)
+namescript.Size = UDim2.new(0, 200, 0, 30)
+namescript.Font = Enum.Font.Arial
+namescript.Text = "Dark Dex"
+namescript.TextColor3 = Color3.new(1, 1, 1)
+namescript.TextSize = 24
+
+ImageScript2.Name = "ImageScript2"
+ImageScript2.Parent = ImagesScript
+ImageScript2.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImageScript2.BorderSizePixel = 0
+ImageScript2.Position = UDim2.new(-0.000643372536, 0, -0.00128370523, 0)
+ImageScript2.Size = UDim2.new(0, 271, 0, 138)
+ImageScript2.Visible = false
+
+namescript_2.Name = "namescript"
+namescript_2.Parent = ImageScript2
+namescript_2.BackgroundColor3 = Color3.new(1, 1, 1)
+namescript_2.BackgroundTransparency = 1
+namescript_2.Position = UDim2.new(0.129151285, 0, 0.391304344, 0)
+namescript_2.Size = UDim2.new(0, 200, 0, 30)
+namescript_2.Font = Enum.Font.Arial
+namescript_2.Text = "Remote Spy"
+namescript_2.TextColor3 = Color3.new(1, 1, 1)
+namescript_2.TextSize = 24
+
+OptionsHub2.Name = "OptionsHub2"
+OptionsHub2.Parent = SynapseXGUI
+OptionsHub2.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+OptionsHub2.BorderSizePixel = 0
+OptionsHub2.Position = UDim2.new(0.326571971, 0, 0.244897962, 0)
+OptionsHub2.Size = UDim2.new(0, 250, 0, 300)
+OptionsHub2.Visible = false
+
+Frame_4.Parent = OptionsHub2
+Frame_4.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0, 250, 0, 30)
+
+Logo_3.Name = "Logo"
+Logo_3.Parent = Frame_4
+Logo_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo_3.BackgroundTransparency = 1
+Logo_3.Size = UDim2.new(0, 30, 0, 30)
+Logo_3.Image = "http://www.roblox.com/asset/?id=9524079125"
+
+Title_3.Name = "Title"
+Title_3.Parent = Frame_4
+Title_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_3.BackgroundTransparency = 1
+Title_3.Position = UDim2.new(0.0995897576, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 30)
+Title_3.Font = Enum.Font.Arial
+Title_3.Text = "Synapse X - Options"
+Title_3.TextColor3 = Color3.new(1, 1, 1)
+Title_3.TextSize = 14
+
+Close_2.Name = "Close"
+Close_2.Parent = OptionsHub2
+Close_2.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.026906861, 0, 0.892479539, 0)
+Close_2.Size = UDim2.new(0, 237, 0, 25)
+Close_2.Font = Enum.Font.Arial
+Close_2.Text = "Close"
+Close_2.TextColor3 = Color3.new(1, 1, 1)
+Close_2.TextSize = 14
+
+ImagesScript_2.Name = "ImagesScript"
+ImagesScript_2.Parent = OptionsHub2
+ImagesScript_2.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImagesScript_2.BackgroundTransparency = 1
+ImagesScript_2.BorderSizePixel = 0
+ImagesScript_2.Position = UDim2.new(0.2871795, 0, 0.121904701, 0)
+ImagesScript_2.Size = UDim2.new(0, 271, 0, 138)
+
+ImageScript1_2.Name = "ImageScript1"
+ImageScript1_2.Parent = ImagesScript_2
+ImageScript1_2.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImageScript1_2.BorderSizePixel = 0
+ImageScript1_2.Position = UDim2.new(-0.000643372536, 0, -0.00128370523, 0)
+ImageScript1_2.Size = UDim2.new(0, 271, 0, 138)
+ImageScript1_2.Visible = false
+
+namescript_3.Name = "namescript"
+namescript_3.Parent = ImageScript1_2
+namescript_3.BackgroundColor3 = Color3.new(1, 1, 1)
+namescript_3.BackgroundTransparency = 1
+namescript_3.Position = UDim2.new(0.129151285, 0, 0.391304344, 0)
+namescript_3.Size = UDim2.new(0, 200, 0, 30)
+namescript_3.Font = Enum.Font.Arial
+namescript_3.Text = "Dark Dex"
+namescript_3.TextColor3 = Color3.new(1, 1, 1)
+namescript_3.TextSize = 24
+
+ImageScript2_2.Name = "ImageScript2"
+ImageScript2_2.Parent = ImagesScript_2
+ImageScript2_2.BackgroundColor3 = Color3.new(0.509804, 0.509804, 0.509804)
+ImageScript2_2.BorderSizePixel = 0
+ImageScript2_2.Position = UDim2.new(-0.000643372536, 0, -0.00128370523, 0)
+ImageScript2_2.Size = UDim2.new(0, 271, 0, 138)
+ImageScript2_2.Visible = false
+
+namescript_4.Name = "namescript"
+namescript_4.Parent = ImageScript2_2
+namescript_4.BackgroundColor3 = Color3.new(1, 1, 1)
+namescript_4.BackgroundTransparency = 1
+namescript_4.Position = UDim2.new(0.129151285, 0, 0.391304344, 0)
+namescript_4.Size = UDim2.new(0, 200, 0, 30)
+namescript_4.Font = Enum.Font.Arial
+namescript_4.Text = "Remote Spy"
+namescript_4.TextColor3 = Color3.new(1, 1, 1)
+namescript_4.TextSize = 24
+
+Functions.Name = "Functions"
+Functions.Parent = OptionsHub2
+Functions.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Functions.BorderSizePixel = 0
+Functions.Position = UDim2.new(0.0240649283, 0, 0.122789115, 0)
+Functions.Size = UDim2.new(0, 237, 0, 225)
+
+Text1.Name = "Text1"
+Text1.Parent = Functions
+Text1.BackgroundColor3 = Color3.new(1, 1, 1)
+Text1.BackgroundTransparency = 1
+Text1.Position = UDim2.new(0.410637796, 0, 0.0325396657, 0)
+Text1.Size = UDim2.new(0, 60, 0, 20)
+Text1.Font = Enum.Font.SourceSans
+Text1.Text = "TopMost"
+Text1.TextColor3 = Color3.new(1, 1, 1)
+Text1.TextSize = 14
+
+Toggle1.Name = "Toggle1"
+Toggle1.Parent = Functions
+Toggle1.BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+Toggle1.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+Toggle1.Position = UDim2.new(0.329589128, 0, 0.0325396657, 0)
+Toggle1.Size = UDim2.new(0, 20, 0, 20)
+Toggle1.Font = Enum.Font.SourceSans
+Toggle1.Text = ""
+Toggle1.TextColor3 = Color3.new(0, 0, 0)
+Toggle1.TextSize = 16
+
+Text2.Name = "Text2"
+Text2.Parent = Functions
+Text2.BackgroundColor3 = Color3.new(1, 1, 1)
+Text2.BackgroundTransparency = 1
+Text2.Position = UDim2.new(0.410637826, 0, 0.156984121, 0)
+Text2.Size = UDim2.new(0, 70, 0, 20)
+Text2.Font = Enum.Font.SourceSans
+Text2.Text = "Unlock FPS"
+Text2.TextColor3 = Color3.new(1, 1, 1)
+Text2.TextSize = 14
+
+Toggle2.Name = "Toggle2"
+Toggle2.Parent = Functions
+Toggle2.BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+Toggle2.BorderColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+Toggle2.Position = UDim2.new(0.329589128, 0, 0.156984121, 0)
+Toggle2.Size = UDim2.new(0, 20, 0, 20)
+Toggle2.Font = Enum.Font.SourceSans
+Toggle2.Text = ""
+Toggle2.TextColor3 = Color3.new(0, 0, 0)
+Toggle2.TextSize = 16
+
+-- Scripts
+
+local function ODHTA_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		assert(loadstring(script.Parent.Parent.ScriptBox.Text))()
+	end)
+end
+coroutine.wrap(ODHTA_fake_script)()
+local function NLHIT_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ScriptBox.Text = "Cleared!"
+		wait(0.5)
+		script.Parent.Parent.ScriptBox.Text = ""
+	end)
+end
+coroutine.wrap(NLHIT_fake_script)()
+local function WIYA_fake_script() -- CloseButton.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	local Frame = script.Parent.Parent.Parent.Parent.SynapseX
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(WIYA_fake_script)()
+local function CARLOO_fake_script() -- MinimizeButton.LocalScript 
+	local script = Instance.new('LocalScript', MinimizeButton)
+
+	local Frame = script.Parent.Parent.Parent.Parent.SynapseX
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(CARLOO_fake_script)()
+local function SPTTXG_fake_script() -- Script1.LocalScript 
+	local script = Instance.new('LocalScript', Script1)
+
+	local scripttext = script.Parent.Parent.Parent.ScriptBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		scripttext.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
+	end)
+end
+coroutine.wrap(SPTTXG_fake_script)()
+local function BKEGR_fake_script() -- Script2.LocalScript 
+	local script = Instance.new('LocalScript', Script2)
+
+	
+end
+coroutine.wrap(BKEGR_fake_script)()
+local function LNCPM_fake_script() -- OpenFile.LocalScript 
+	local script = Instance.new('LocalScript', OpenFile)
+
+	local newfile = script.Parent.Parent.ScriptsFrame.Script2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		newfile.Visible = true
+	end)
+end
+coroutine.wrap(LNCPM_fake_script)()
+local function ZHOYIO_fake_script() -- ScriptHub.LocalScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	local button = script.Parent.Parent.ScriptHub
+	local Frame = script.Parent.Parent.Parent.ScriptHub2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		button.Text = "Starting..."
+		wait(0.5)
+		button.Text = "Script Hub"
+		Frame.Visible = true
+	end)
+end
+coroutine.wrap(ZHOYIO_fake_script)()
+local function RADTV_fake_script() -- Options.LocalScript 
+	local script = Instance.new('LocalScript', Options)
+
+	local button = script.Parent.Parent.Options
+	local Frame = script.Parent.Parent.Parent.OptionsHub2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		button.Text = "Starting..."
+		wait(0.5)
+		button.Text = "Options"
+		Frame.Visible = true
+	end)
+end
+coroutine.wrap(RADTV_fake_script)()
+local function FNCOB_fake_script() -- CloseButton_2.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton_2)
+
+	local Tab = script.Parent.Parent.Parent.Parent.TabSystem.script1tab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Tab.Visible = false
+	end)
+end
+coroutine.wrap(FNCOB_fake_script)()
+local function TNYW_fake_script() -- AddButton.LocalScript 
+	local script = Instance.new('LocalScript', AddButton)
+
+	local Tab = script.Parent.Parent.Parent.Parent.TabSystem.script2tab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Tab.Visible = true
+	end)
+end
+coroutine.wrap(TNYW_fake_script)()
+local function TBBPM_fake_script() -- CloseButton_3.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton_3)
+
+	local Tab = script.Parent.Parent.Parent.Parent.TabSystem.script2tab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Tab.Visible = false
+	end)
+end
+coroutine.wrap(TBBPM_fake_script)()
+local function MGLESL_fake_script() -- AddButton_2.LocalScript 
+	local script = Instance.new('LocalScript', AddButton_2)
+
+	
+end
+coroutine.wrap(MGLESL_fake_script)()
+local function FDAL_fake_script() -- SaveFile.LocalScript 
+	local script = Instance.new('LocalScript', SaveFile)
+
+	local newfile = script.Parent.Parent.ScriptsFrame.Script2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		newfile.Visible = true
+	end)
+end
+coroutine.wrap(FDAL_fake_script)()
+local function AFIEQFT_fake_script() -- SynapseX.Toggle 
+	local script = Instance.new('LocalScript', SynapseX)
+
+	local FrameObject = script.Parent.Parent.SynapseX
+	local Open = false
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(Input)
+		if Input.KeyCode == Enum.KeyCode.V then
+			if Open then
+				Open = false
+				FrameObject.Visible = true
+			else
+				Open = true
+				FrameObject.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(AFIEQFT_fake_script)()
+local function SCILSH_fake_script() -- SynapseX.Draggable3 
+	local script = Instance.new('LocalScript', SynapseX)
+
+	frame = script.Parent.Parent.SynapseX
+	frame.Draggable = true
+	frame.Active = true
+end
+coroutine.wrap(SCILSH_fake_script)()
+local function MZZBOSZ_fake_script() -- MinimizeButton_2.LocalScript 
+	local script = Instance.new('LocalScript', MinimizeButton_2)
+
+	local Frame = script.Parent.Parent.Parent.Parent.ScriptHub2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(MZZBOSZ_fake_script)()
+local function ANNCD_fake_script() -- darkdexScript1.LocalScript 
+	local script = Instance.new('LocalScript', darkdexScript1)
+
+	local image1 = script.Parent.Parent.Parent.ImagesScript.ImageScript1
+	local darkdex = script.Parent.Parent.Parent.Description.TextScript1
+	local image2 = script.Parent.Parent.Parent.ImagesScript.ImageScript2
+	local remotespy = script.Parent.Parent.Parent.Description.TextScript2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if image2.Visible == true then
+			image2.Visible = false
+		end
+		if remotespy.Visible == true then
+			remotespy.Visible = false
+		end
+		image1.Visible = true
+		darkdex.Visible = true
+	end)
+end
+coroutine.wrap(ANNCD_fake_script)()
+local function ISHRFI_fake_script() -- remotespyScript2.LocalScript 
+	local script = Instance.new('LocalScript', remotespyScript2)
+
+	local image1 = script.Parent.Parent.Parent.ImagesScript.ImageScript1
+	local darkdex = script.Parent.Parent.Parent.Description.TextScript1
+	local image2 = script.Parent.Parent.Parent.ImagesScript.ImageScript2
+	local remotespy = script.Parent.Parent.Parent.Description.TextScript2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if image1.Visible == true then
+			image1.Visible = false
+		end
+		if darkdex.Visible == true then
+			darkdex.Visible = false
+		end
+		image2.Visible = true
+		remotespy.Visible = true
+	end)
+end
+coroutine.wrap(ISHRFI_fake_script)()
+local function WKXV_fake_script() -- Execute_2.LocalScript 
+	local script = Instance.new('LocalScript', Execute_2)
+
+	local text = script.Parent.Parent.Parent.ScriptHub2.Execute
+	local darkdex = script.Parent.Parent.Parent.ScriptHub2.ImagesScript.ImageScript1.namescript
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if darkdex.Visible == true then
+			text.Text = "Executing..."
+			wait(0.5)
+			
+			text.Text = "Execute"
+		end
+	end)
+end
+coroutine.wrap(WKXV_fake_script)()
+local function JWZHGAV_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local Frame = script.Parent.Parent.Parent.Parent.ScriptHub2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(JWZHGAV_fake_script)()
+local function XKRFF_fake_script() -- ScriptHub2.Draggable2 
+	local script = Instance.new('LocalScript', ScriptHub2)
+
+	frame = script.Parent.Parent.ScriptHub2
+	frame.Draggable = true
+	frame.Active = true
+end
+coroutine.wrap(XKRFF_fake_script)()
+local function COWG_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	local Frame = script.Parent.Parent.Parent.OptionsHub2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(COWG_fake_script)()
+local function VLXWM_fake_script() -- Toggle1.LocalScript 
+	local script = Instance.new('LocalScript', Toggle1)
+
+	local toggle = script.Parent.Parent.Parent.Parent.OptionsHub2.Functions.Toggle1
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggle.Text = "X"
+	end)
+end
+coroutine.wrap(VLXWM_fake_script)()
+local function LIFFTWC_fake_script() -- Toggle2.LocalScript 
+	local script = Instance.new('LocalScript', Toggle2)
+
+	local toggle = script.Parent.Parent.Parent.Parent.OptionsHub2.Functions.Toggle2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggle.Text = "X"
+        loadstring(game:HttpGet("https://pastebin.com/raw/2MqFBmsU", true))()
+	end)
+end
+coroutine.wrap(LIFFTWC_fake_script)()
+local function BIMCWP_fake_script() -- OptionsHub2.Draggable1 
+	local script = Instance.new('LocalScript', OptionsHub2)
+
+	frame = script.Parent.Parent.OptionsHub2
+	frame.Draggable = true
+	frame.Active = true
+end
+coroutine.wrap(BIMCWP_fake_script)()
