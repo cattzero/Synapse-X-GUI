@@ -1,12 +1,4 @@
---[[
-
-		Synapse X GUI
-		Made by Master
-		Version 1.2.0
-
-]]
-
-
+-- dont use ts please
 -- Instances
 
 local SynapseXGUI = Instance.new("ScreenGui")
